@@ -1,7 +1,12 @@
-# Lucas Martin - Página Pessoal
+# Lucas Martin — Portfólio
 
-Bem-vindo ao meu espaço no GitHub! 🚀  
+Portfólio pessoal com projetos em desenvolvimento web, automação de processos e soluções digitais com aplicação real.
 
-Aqui você encontrará projetos e experimentos sobre programação, automação e desenvolvimento web. Estou sempre aprendendo e explorando novas tecnologias.  
+Aqui apresento trabalhos voltados à criação de sistemas, automações internas e aplicativos que resolvem problemas práticos em contextos acadêmicos e operacionais.
 
-📫 Contato: lucas141martin@hotmail.com 
+## Destaques
+- Projetos premiados em feira científica e hackathon
+- Soluções em Flutter, JavaScript, Python e automação com Google Apps Script
+- Experiências com sistemas web, mobile e fluxos operacionais automatizados
+
+📫 Contato: lucas141martin@hotmail.com
