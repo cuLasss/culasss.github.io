@@ -15,6 +15,7 @@
     <link rel="canonical" href="https://culasss.github.io">
     <link rel="icon" type="image/x-icon" href="/imagens/favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
     <script type="application/ld+json">
@@ -44,29 +45,28 @@
     </script>
 </head>
 <body>
-    <div class="floating-particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
     <header class="header">
         <div class="profile-section">
-            <img class="profile-image" src="imagens/perfil.jpeg?v=5" alt="Lucas Martin - Desenvolvedor em formação" width="150" height="150" loading="lazy">
+            <img
+                class="profile-image"
+                src="imagens/perfil.jpeg?v=5"
+                alt="Lucas Martin - Desenvolvedor em formação"
+                width="150"
+                height="150"
+                loading="eager"
+                fetchpriority="high"
+            >
             <h1 class="main-title">Lucas Martin</h1>
             <p class="subtitle">Desenvolvedor em formação | Web, Mobile e Automação</p>
             <p class="tagline">Projetos práticos em sistemas, automação de processos e soluções digitais com aplicação real</p>
         </div>
     </header>
 
-    <nav class="navigation" role="navigation" aria-label="Menu principal">
+    <nav class="navigation" aria-label="Menu principal">
         <ul class="nav-list">
-            <li><a href="#sobre" class="nav-link" aria-label="Ir para seção Sobre">Sobre</a></li>
-            <li><a href="#projetos" class="nav-link" aria-label="Ir para seção Projetos">Projetos</a></li>
-            <li><a href="#contato" class="nav-link" aria-label="Ir para seção Contato">Contato</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
     </nav>
 
@@ -84,25 +84,25 @@
 
                     <div class="skills-grid">
                         <div class="skill-card">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code" aria-hidden="true"></i>
                             <h3>Desenvolvimento Web</h3>
                             <p>Criação de interfaces e sistemas web com foco em clareza, usabilidade e organização.</p>
                         </div>
 
                         <div class="skill-card">
-                            <i class="fas fa-gears"></i>
+                            <i class="fas fa-gears" aria-hidden="true"></i>
                             <h3>Automação de Processos</h3>
                             <p>Automação de rotinas operacionais com formulários, scripts e fluxos de trabalho.</p>
                         </div>
 
                         <div class="skill-card">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                             <h3>Desenvolvimento Mobile</h3>
                             <p>Aplicativos voltados à solução de problemas práticos e ao uso no dia a dia.</p>
                         </div>
 
                         <div class="skill-card">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
                             <h3>Soluções Digitais</h3>
                             <p>Projetos desenvolvidos para transformar necessidades reais em ferramentas úteis.</p>
                         </div>
@@ -115,10 +115,9 @@
             <div class="container">
                 <h2 id="projetos-title" class="section-title">Projetos</h2>
                 <div class="projects-grid">
-
-                    <div class="project-card" data-category="mobile">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Dieta Ideal</h3>
                         <p class="project-description">
@@ -131,16 +130,16 @@
                             <span class="tech-tag">Cálculo Nutricional</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/ix-fecib-movimenta-if-sudeste-mg-campus-barbacena" target="_blank" class="project-link" rel="noopener noreferrer">
-                                <i class="fas fa-trophy"></i>
+                            <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/ix-fecib-movimenta-if-sudeste-mg-campus-barbacena" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
                                 Ver premiação
                             </a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="web">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-ticket-alt"></i>
+                            <i class="fas fa-ticket-alt" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Sistema de Ticket Virtual</h3>
                         <p class="project-description">
@@ -153,16 +152,16 @@
                             <span class="tech-tag">Solução em Equipe</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/campus-barbacena-realiza-1o-hackathon-do-coworking-ifbq" target="_blank" class="project-link" rel="noopener noreferrer">
-                                <i class="fas fa-trophy"></i>
+                            <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/campus-barbacena-realiza-1o-hackathon-do-coworking-ifbq" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
                                 Ver premiação
                             </a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="automation">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-table"></i>
+                            <i class="fas fa-table" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">PSO Automation</h3>
                         <p class="project-description">
@@ -174,11 +173,11 @@
                             <span class="tech-tag">Google Sheets</span>
                             <span class="tech-tag">Automação</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="automation">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-comments"></i>
+                            <i class="fas fa-comments" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Deliver</h3>
                         <p class="project-description">
@@ -190,11 +189,11 @@
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">WhatsApp</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="mobile">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Minei</h3>
                         <p class="project-description">
@@ -206,11 +205,11 @@
                             <span class="tech-tag">Compras</span>
                             <span class="tech-tag">Em andamento</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="web">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-chart-bar"></i>
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Dashboard Administrativo</h3>
                         <p class="project-description">
@@ -221,11 +220,11 @@
                             <span class="tech-tag">Painel Administrativo</span>
                             <span class="tech-tag">Gestão</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="web">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-dumbbell"></i>
+                            <i class="fas fa-dumbbell" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Sistema para Academia</h3>
                         <p class="project-description">
@@ -236,11 +235,11 @@
                             <span class="tech-tag">Gestão</span>
                             <span class="tech-tag">Em andamento</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card" data-category="web">
+                    <article class="project-card">
                         <div class="project-icon">
-                            <i class="fas fa-gamepad"></i>
+                            <i class="fas fa-gamepad" aria-hidden="true"></i>
                         </div>
                         <h3 class="project-title">Show do Lucão</h3>
                         <p class="project-description">
@@ -251,8 +250,7 @@
                             <span class="tech-tag">APIs</span>
                             <span class="tech-tag">Web</span>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
             </div>
         </section>
@@ -269,24 +267,24 @@
 
                         <div class="contact-links">
                             <a href="mailto:lucas141martin@hotmail.com" class="contact-link" id="emailLink" title="Clique para copiar o e-mail">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 <span class="email-text">lucas141martin@hotmail.com</span>
                                 <span class="copy-confirmation">Copiado!</span>
                             </a>
 
                             <a href="https://github.com/cuLasss" class="contact-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
+                                <i class="fab fa-github" aria-hidden="true"></i>
                                 GitHub
                             </a>
 
                             <a href="https://www.linkedin.com/in/lucas-m4rtin/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                                 LinkedIn
                             </a>
                         </div>
                     </div>
 
-                    <form class="contact-form" action="https://formspree.io/f/xvgwdzgk" method="POST" id="contactForm" role="form" aria-label="Formulário de contato">
+                    <form class="contact-form" action="https://formspree.io/f/xvgwdzgk" method="POST" id="contactForm" aria-label="Formulário de contato">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
                             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
@@ -299,10 +297,10 @@
 
                         <div class="form-group">
                             <label for="telefone">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                                 Telefone:
                             </label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="+55 (32) 9 9999-9999" maxlength="20">
+                            <input type="tel" id="telefone" name="telefone" placeholder="+55 (32) 9 9999-9999" maxlength="20" inputmode="tel" autocomplete="tel">
                             <div id="countryIndicator" class="country-indicator"></div>
                         </div>
 
@@ -324,7 +322,7 @@
                         </div>
 
                         <button type="submit" class="submit-btn" id="submitBtn">
-                            <i class="fas fa-paper-plane"></i>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
                             <span>Enviar mensagem</span>
                         </button>
 
@@ -342,262 +340,183 @@
     </footer>
 
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        const $ = (selector) => document.querySelector(selector);
+        const $$ = (selector) => document.querySelectorAll(selector);
+
+        /* Navegação suave */
+        $$('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (!href || !href.startsWith('#')) return;
+
+                const target = $(href);
+                if (!target) return;
+
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        const telefoneInput = document.getElementById('telefone');
+        /* Máscara de telefone */
+        const telefoneInput = $('#telefone');
+        const countryIndicator = $('#countryIndicator');
 
         const countryFormats = {
-            '55': { name: 'Brasil', format: 'XX (XX) X XXXX-XXXX', areaLength: 2, phoneLength: 9 },
-            '1': { name: 'EUA/Canadá', format: 'X (XXX) XXX-XXXX', areaLength: 3, phoneLength: 7 },
-            '44': { name: 'Reino Unido', format: 'XX XXXX XXXXXX', areaLength: 0, phoneLength: 10 },
-            '33': { name: 'França', format: 'XX X XX XX XX XX', areaLength: 0, phoneLength: 9 },
-            '49': { name: 'Alemanha', format: 'XX XXX XXXXXXX', areaLength: 0, phoneLength: 10 },
-            '39': { name: 'Itália', format: 'XX XXX XXX XXXX', areaLength: 0, phoneLength: 9 },
-            '34': { name: 'Espanha', format: 'XX XXX XX XX XX', areaLength: 0, phoneLength: 9 },
-            '351': { name: 'Portugal', format: 'XXX XX XXX XXXX', areaLength: 0, phoneLength: 9 },
-            '54': { name: 'Argentina', format: 'XX (XXX) XXX-XXXX', areaLength: 3, phoneLength: 8 },
-            '52': { name: 'México', format: 'XX (XXX) XXX-XXXX', areaLength: 3, phoneLength: 8 },
-            '56': { name: 'Chile', format: 'XX X XXXX XXXX', areaLength: 0, phoneLength: 8 },
-            '57': { name: 'Colômbia', format: 'XX (XXX) XXX-XXXX', areaLength: 3, phoneLength: 7 },
-            '51': { name: 'Peru', format: 'XX (XXX) XXX-XXX', areaLength: 3, phoneLength: 7 },
-            '86': { name: 'China', format: 'XX XXX XXXX XXXX', areaLength: 0, phoneLength: 11 },
-            '81': { name: 'Japão', format: 'XX XX-XXXX-XXXX', areaLength: 0, phoneLength: 10 },
-            '82': { name: 'Coreia do Sul', format: 'XX XX-XXXX-XXXX', areaLength: 0, phoneLength: 10 },
-            '91': { name: 'Índia', format: 'XX XXXX-XXXXXX', areaLength: 0, phoneLength: 10 },
-            '61': { name: 'Austrália', format: 'XX X XXXX XXXX', areaLength: 0, phoneLength: 9 },
-            '27': { name: 'África do Sul', format: 'XX XX XXX XXXX', areaLength: 0, phoneLength: 9 }
+            '55': 'Brasil',
+            '1': 'EUA/Canadá',
+            '44': 'Reino Unido',
+            '33': 'França',
+            '49': 'Alemanha',
+            '39': 'Itália',
+            '34': 'Espanha',
+            '351': 'Portugal',
+            '54': 'Argentina',
+            '52': 'México',
+            '56': 'Chile',
+            '57': 'Colômbia',
+            '51': 'Peru',
+            '86': 'China',
+            '81': 'Japão',
+            '82': 'Coreia do Sul',
+            '91': 'Índia',
+            '61': 'Austrália',
+            '27': 'África do Sul'
         };
 
         function detectCountryCode(numbers) {
-            if (numbers.length >= 3) {
-                const code3 = numbers.substring(0, 3);
-                if (countryFormats[code3]) return { code: code3, format: countryFormats[code3] };
-            }
-
-            if (numbers.length >= 2) {
-                const code2 = numbers.substring(0, 2);
-                if (countryFormats[code2]) return { code: code2, format: countryFormats[code2] };
-            }
-
-            if (numbers.length >= 1) {
-                const code1 = numbers.substring(0, 1);
-                if (countryFormats[code1]) return { code: code1, format: countryFormats[code1] };
-            }
-
-            return null;
+            const codes = Object.keys(countryFormats).sort((a, b) => b.length - a.length);
+            return codes.find(code => numbers.startsWith(code)) || null;
         }
 
         function formatPhoneNumber(value) {
             let numbers = value.replace(/\D/g, '');
 
-            if (value.length > 0 && !value.startsWith('+')) {
+            if (!value.startsWith('+') && numbers.length) {
                 return '+' + numbers;
             }
 
-            if (value.startsWith('+')) {
-                if (numbers.length > 15) {
-                    numbers = numbers.substring(0, 15);
-                }
+            if (!numbers.length) return '';
 
-                if (numbers.length === 0) {
-                    return '+';
-                }
-
-                const country = detectCountryCode(numbers);
-
-                if (!country) {
-                    if (numbers.length <= 2) {
-                        return `+${numbers}`;
-                    } else if (numbers.length <= 4) {
-                        return `+${numbers.substring(0, 2)} (${numbers.substring(2)}`;
-                    } else if (numbers.length <= 7) {
-                        return `+${numbers.substring(0, 2)} (${numbers.substring(2, 4)}) ${numbers.substring(4)}`;
-                    } else {
-                        return `+${numbers.substring(0, 2)} (${numbers.substring(2, 4)}) ${numbers.substring(4, 8)}-${numbers.substring(8)}`;
-                    }
-                }
-
-                const countryCode = country.code;
-                const phoneNumbers = numbers.substring(countryCode.length);
-
-                if (countryCode === '55') {
-                    if (phoneNumbers.length <= 2) {
-                        return `+${countryCode} (${phoneNumbers}`;
-                    } else if (phoneNumbers.length <= 6) {
-                        return `+${countryCode} (${phoneNumbers.substring(0, 2)}) ${phoneNumbers.substring(2)}`;
-                    } else if (phoneNumbers.length <= 10) {
-                        return `+${countryCode} (${phoneNumbers.substring(0, 2)}) ${phoneNumbers.substring(2, 6)}-${phoneNumbers.substring(6)}`;
-                    } else {
-                        return `+${countryCode} (${phoneNumbers.substring(0, 2)}) ${phoneNumbers.substring(2, 3)} ${phoneNumbers.substring(3, 7)}-${phoneNumbers.substring(7)}`;
-                    }
-                } else if (countryCode === '1') {
-                    if (phoneNumbers.length <= 3) {
-                        return `+${countryCode} (${phoneNumbers}`;
-                    } else if (phoneNumbers.length <= 6) {
-                        return `+${countryCode} (${phoneNumbers.substring(0, 3)}) ${phoneNumbers.substring(3)}`;
-                    } else {
-                        return `+${countryCode} (${phoneNumbers.substring(0, 3)}) ${phoneNumbers.substring(3, 6)}-${phoneNumbers.substring(6)}`;
-                    }
-                } else if (countryCode === '351') {
-                    if (phoneNumbers.length <= 2) {
-                        return `+${countryCode} ${phoneNumbers}`;
-                    } else if (phoneNumbers.length <= 5) {
-                        return `+${countryCode} ${phoneNumbers.substring(0, 2)} ${phoneNumbers.substring(2)}`;
-                    } else if (phoneNumbers.length <= 8) {
-                        return `+${countryCode} ${phoneNumbers.substring(0, 2)} ${phoneNumbers.substring(2, 5)} ${phoneNumbers.substring(5)}`;
-                    } else {
-                        return `+${countryCode} ${phoneNumbers.substring(0, 2)} ${phoneNumbers.substring(2, 5)} ${phoneNumbers.substring(5, 8)} ${phoneNumbers.substring(8)}`;
-                    }
-                } else {
-                    if (phoneNumbers.length <= 3) {
-                        return `+${countryCode} ${phoneNumbers}`;
-                    } else if (phoneNumbers.length <= 6) {
-                        return `+${countryCode} ${phoneNumbers.substring(0, 3)} ${phoneNumbers.substring(3)}`;
-                    } else if (phoneNumbers.length <= 9) {
-                        return `+${countryCode} ${phoneNumbers.substring(0, 3)} ${phoneNumbers.substring(3, 6)} ${phoneNumbers.substring(6)}`;
-                    } else {
-                        return `+${countryCode} ${phoneNumbers.substring(0, 3)} ${phoneNumbers.substring(3, 6)} ${phoneNumbers.substring(6, 9)} ${phoneNumbers.substring(9)}`;
-                    }
-                }
+            if (numbers.length > 15) {
+                numbers = numbers.slice(0, 15);
             }
 
-            return numbers;
+            const countryCode = detectCountryCode(numbers);
+
+            if (!countryCode) {
+                return '+' + numbers;
+            }
+
+            const phone = numbers.slice(countryCode.length);
+
+            if (countryCode === '55') {
+                if (phone.length <= 2) return `+55 (${phone}`;
+                if (phone.length <= 7) return `+55 (${phone.slice(0, 2)}) ${phone.slice(2)}`;
+                if (phone.length <= 10) return `+55 (${phone.slice(0, 2)}) ${phone.slice(2, 6)}-${phone.slice(6)}`;
+                return `+55 (${phone.slice(0, 2)}) ${phone.slice(2, 3)} ${phone.slice(3, 7)}-${phone.slice(7, 11)}`;
+            }
+
+            return `+${countryCode} ${phone}`.trim();
         }
 
-        telefoneInput.addEventListener('input', function(e) {
-            const cursorPosition = e.target.selectionStart;
-            const oldValue = e.target.value;
-            const newValue = formatPhoneNumber(e.target.value);
+        if (telefoneInput) {
+            telefoneInput.addEventListener('input', (e) => {
+                const value = e.target.value;
+                const formatted = formatPhoneNumber(value);
+                e.target.value = formatted;
 
-            e.target.value = newValue;
+                const numbers = formatted.replace(/\D/g, '');
+                const countryCode = detectCountryCode(numbers);
 
-            const lengthDiff = newValue.length - oldValue.length;
-            e.target.setSelectionRange(cursorPosition + lengthDiff, cursorPosition + lengthDiff);
+                if (countryCode && numbers.length > countryCode.length + 1) {
+                    countryIndicator.textContent = `🌍 ${countryFormats[countryCode]}`;
+                    countryIndicator.classList.add('show');
+                } else {
+                    countryIndicator.textContent = '';
+                    countryIndicator.classList.remove('show');
+                }
+            });
 
-            const numbers = newValue.replace(/\D/g, '');
-            const country = detectCountryCode(numbers);
-            const countryIndicator = document.getElementById('countryIndicator');
+            telefoneInput.addEventListener('blur', (e) => {
+                const value = e.target.value.replace(/\D/g, '');
+                e.target.style.borderColor = value.length > 0 && value.length < 8
+                    ? '#f87171'
+                    : '';
+            });
+        }
 
-            if (country && numbers.length >= country.code.length + 2) {
-                countryIndicator.textContent = `🌍 ${country.format.name}`;
-                countryIndicator.classList.add('show');
-            } else {
-                countryIndicator.classList.remove('show');
-            }
-        });
-
-        telefoneInput.addEventListener('keydown', function(e) {
-            if ([8, 9, 27, 13, 46].indexOf(e.keyCode) !== -1 ||
-                (e.keyCode === 65 && e.ctrlKey === true) ||
-                (e.keyCode === 67 && e.ctrlKey === true) ||
-                (e.keyCode === 86 && e.ctrlKey === true) ||
-                (e.keyCode === 88 && e.ctrlKey === true) ||
-                (e.keyCode >= 35 && e.keyCode <= 40)) {
-                return;
-            }
-            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-                e.preventDefault();
-            }
-        });
-
-        telefoneInput.addEventListener('blur', function(e) {
-            const value = e.target.value.replace(/\D/g, '');
-            if (value.length > 0 && value.length < 8) {
-                e.target.style.borderColor = '#f44336';
-                e.target.title = 'Telefone deve ter pelo menos 8 dígitos';
-            } else {
-                e.target.style.borderColor = 'rgba(74, 158, 255, 0.3)';
-                e.target.title = '';
-            }
-        });
-
-        const emailLink = document.getElementById('emailLink');
+        /* Copiar e-mail */
+        const emailLink = $('#emailLink');
         const emailText = 'lucas141martin@hotmail.com';
 
-        emailLink.addEventListener('click', async function(e) {
-            e.preventDefault();
+        if (emailLink) {
+            emailLink.addEventListener('click', async (e) => {
+                e.preventDefault();
 
-            try {
-                await navigator.clipboard.writeText(emailText);
-
-                emailLink.classList.add('copied');
+                try {
+                    await navigator.clipboard.writeText(emailText);
+                } catch {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = emailText;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                }
 
                 const icon = emailLink.querySelector('i');
                 const originalClass = icon.className;
+
+                emailLink.classList.add('copied');
                 icon.className = 'fas fa-check';
 
                 setTimeout(() => {
                     emailLink.classList.remove('copied');
                     icon.className = originalClass;
-                }, 2000);
-            } catch (err) {
-                const textArea = document.createElement('textarea');
-                textArea.value = emailText;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
+                }, 1800);
+            });
+        }
 
-                emailLink.classList.add('copied');
-                const icon = emailLink.querySelector('i');
-                const originalClass = icon.className;
-                icon.className = 'fas fa-check';
+        /* Envio do formulário */
+        const contactForm = $('#contactForm');
+        const submitBtn = $('#submitBtn');
+        const formStatus = $('#formStatus');
 
-                setTimeout(() => {
-                    emailLink.classList.remove('copied');
-                    icon.className = originalClass;
-                }, 2000);
-            }
-        });
+        if (contactForm && submitBtn && formStatus) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
 
-        const contactForm = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const formStatus = document.getElementById('formStatus');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i><span>Enviando...</span>';
+                formStatus.className = 'form-status loading';
+                formStatus.textContent = 'Enviando sua mensagem...';
 
-        contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: new FormData(contactForm),
+                        headers: { 'Accept': 'application/json' }
+                    });
 
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Enviando...</span>';
-            formStatus.className = 'form-status loading';
-            formStatus.textContent = 'Enviando sua mensagem...';
+                    if (!response.ok) throw new Error();
 
-            try {
-                const formData = new FormData(contactForm);
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
                     formStatus.className = 'form-status success';
                     formStatus.textContent = '✅ Mensagem enviada com sucesso! Entrarei em contato em breve.';
                     contactForm.reset();
-                } else {
-                    throw new Error('Erro ao enviar mensagem');
+
+                    if (countryIndicator) {
+                        countryIndicator.textContent = '';
+                        countryIndicator.classList.remove('show');
+                    }
+                } catch {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = '❌ Erro ao enviar mensagem. Tente novamente ou envie um e-mail direto.';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane" aria-hidden="true"></i><span>Enviar mensagem</span>';
                 }
-            } catch (error) {
-                formStatus.className = 'form-status error';
-                formStatus.textContent = '❌ Erro ao enviar mensagem. Tente novamente ou envie um e-mail direto.';
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i><span>Enviar mensagem</span>';
-            }
-        });
+            });
+        }
     </script>
 </body>
 </html>
